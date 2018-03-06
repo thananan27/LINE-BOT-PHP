@@ -1,6 +1,6 @@
  <?php
  function pubMqtt($topic,$msg){
-    $APPID= "ioTree"; //enter your appid
+    $APPID= "ioTree/"; //enter your appid
     $KEY = "65sq5pMNDnTmAd5"; //enter your key
     $SECRET = "AdhuUbgMc3hT9Wi4FyZTEl9mH"; //enter your secret
     $Topic = "$topic"; 
