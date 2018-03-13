@@ -9,11 +9,13 @@ function send_LINE($msg){
         'text' => $msg
         //'text' => $text
       ];
-      $url = 'https://api.line.me/v2/bot/message/push';
-      $data = [
-        'to' =>  'Ucf28a74d2ae4326589ec03a323bfbff0','Uc2a3e01392780bbf62fbe885cbeab140',
-        'messages' => [$messages],
-      ];
+      $url = 'https://api.line.me/v2/bot/message/reply';
+      $data = ['messages' => [$messages],];
+      //$url = 'https://api.line.me/v2/bot/message/push';
+      //$data = [
+      //  'to' =>  'Ucf28a74d2ae4326589ec03a323bfbff0','Uc2a3e01392780bbf62fbe885cbeab140',
+      // 'messages' => [$messages],
+      //];
       $post = json_encode($data);
       $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
 
