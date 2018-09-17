@@ -1,7 +1,7 @@
  <?php
  function pubMqtt($topic,$msg){
-    $APPID= "ESPApp/"; //enter your appid
-    $KEY = "KX9EjTVhh1SJtt6"; //enter your key
+       $APPID= "ESPApp/"; //enter your appid
+     $KEY = "KX9EjTVhh1SJtt6"; //enter your key
     $SECRET = "U29YfiynGbiTN37T8CVSHBc3G"; //enter your secret
     $Topic = "$topic"; 
       put("https://api.netpie.io/microgear/".$APPID.$Topic."?retain&auth=".$KEY.":".$SECRET,$msg);
@@ -37,7 +37,7 @@
      
     curl_setopt($ch, CURLOPT_POSTFIELDS, $tmsg);
  
-  //  curl_setopt($ch, CURLOPT_USERPWD, "KX9EjTVhh1SJtt6:U29YfiynGbiTN37T8CVSHBc3G");
+    //curl_setopt($ch, CURLOPT_USERPWD, "mJ7K4MfteC7p0dW:pp4gzMhCvJIqlxc66hKEvk46m");
      
     $response = curl_exec($ch);
     
@@ -45,7 +45,7 @@
       echo $response . "\r\n";
     return $response;
 }
-// $Topic = "Node1";
+// $Topic = "NodeMCU1";
  //$lineMsg = "CHECK";
  //getMqttfromlineMsg($Topic,$lineMsg);
 ?>
